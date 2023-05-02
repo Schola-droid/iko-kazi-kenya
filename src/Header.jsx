@@ -3,9 +3,11 @@ import NavBar from "./components/NavBar";
 
 const Header = () => {
   return (
-    <div id="header">
-      <h1>IKO KAZI KENYA</h1>
-      <NavBar />
+    <div id="header-container">
+      <div id="header">
+        <h1 style={{ fontSize: "3vw" }}>IKO KAZI KENYA</h1>
+        <NavBar />
+      </div>
     </div>
   );
 };
