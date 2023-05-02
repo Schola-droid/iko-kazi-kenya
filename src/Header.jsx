@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div id="header-container">
       <div id="header">
-        <h1 style={{ fontSize: "3vw" }}>IKO KAZI KENYA</h1>
+        <h1 style={{ fontSize: "2vw" }}>IKO KAZI KENYA</h1>
         <NavBar />
       </div>
     </div>
