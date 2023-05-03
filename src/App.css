@@ -123,7 +123,19 @@ body {
 .job-details .jobselect-image {
   width: 100%;
 }
+/* JOBSLIST STYLING*/
 
+.jobslist {
+  background-color: rgb(217, 217, 222);
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+.jobslist h3 {
+  color: rgb(46, 46, 97);
+  cursor: pointer;
+  font-size: 1.5vh;
+}
 #footer {
   background-color: rgb(46, 46, 97);
   padding: 10px;
