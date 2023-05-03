@@ -12,7 +12,6 @@ const JobsRender = () => {
   return (
     <>
       <div>
-        JOBS LIST
         <ul id="jobslist-container">
           {data?.map((job) => {
             return (

@@ -5,13 +5,11 @@ const JobDetails = () => {
   const { state, dispatch } = useContext(InitialContext);
 
   function handleDisablerClick() {
-    console.log("disable");
     dispatch({
-        type: 'DISABLE',
-    })
+      type: "DISABLE",
+    });
   }
   const job = state.jobselect;
-  console.log(job);
   return (
     <div>
       {/* JOB DETAILS */}
@@ -33,7 +31,7 @@ const JobDetails = () => {
           <h4>Requirements</h4>
           <ul>
             {job.job_requirements.map((req) => {
-              return <li>{req}</li>;
+              return <li key={req}>{req}</li>;
             })}
           </ul>
         </div>
