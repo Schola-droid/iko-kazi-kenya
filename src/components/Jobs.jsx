@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import SearchBar from "./SearchBar";
 import CategoryFilter from "./CategoryFilter";
-import JobsList from "./JobsList";
 import JobDetails from "./JobDetails";
 import { InitialContext } from "./JobContext";
+import JobsRender from "./JobsRender";
 
 const Jobs = () => {
   const { state, dispatch } = useContext(InitialContext);
@@ -14,7 +14,7 @@ const Jobs = () => {
       <SearchBar />
       <div id={id}>
         <CategoryFilter />
-        <JobsList />
+        <JobsRender />
         <JobDetails />
       </div>
     </div>
