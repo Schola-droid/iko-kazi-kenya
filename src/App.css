@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   color: white;
-  font-size: 1.5vw;
+  font-size: 2vh;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -31,10 +31,6 @@ body {
   color: rgb(255, 242, 0);
   cursor: pointer;
 }
-#mainComponents {
-  display: flex;
-  justify-content: space-between;
-}
 
 /* SEARCH BAR */
 #search {
@@ -48,41 +44,58 @@ body {
 }
 
 /* JOBS STYLING */
+#mainComponents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 5px;
+}
+
 #jobs-container {
   display: flex;
   flex-wrap: wrap;
-  /* width: 75%; */
-  /* justify-content: space-around; */
 }
 .jobs {
-  /* font-size: 1.5vw; */
+  flex-grow: 1;
+  flex-basis: 30%;
   list-style-type: none;
   background-color: rgb(46, 46, 97);
-  padding: 10px 15px;
-  margin: 5px;
-  width: 40%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
   border-radius: 10px;
 }
 .jobs h3 {
   margin-bottom: 10px;
+  color: rgb(255, 255, 181);
 }
-
+.jobs .truncate {
+  font-size: 1.5vh;
+  line-height: 3vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
 .jobs .sub-details {
   display: flex;
 }
+
 .jobs .sub-details p {
   background-color: rgb(74, 74, 127);
+  font-size: 1.5vh;
   margin: 5px;
   padding: 5px;
   border-radius: 3px;
 }
 .jobs .read-more-btn {
+  font-size: 1.5vh;
   /* background-color: blue; */
   color: rgb(46, 46, 97);
 }
 
 #category-filter {
-  width: 50%;
-  height: 800px;
+  height: 100px;
+  border-radius: 5px;
   background-color: rgb(7, 62, 68);
 }

@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const CategoryFilter = () => {
-    return (
-        <div id='category-filter'>
-            CATEGORY FILTER
-        </div>
-    );
-}
+  return (
+    <>
+      <div>
+        CATEGORY FILTER
+        <div id="category-filter"></div>
+      </div>
+    </>
+  );
+};
 
 export default CategoryFilter;
