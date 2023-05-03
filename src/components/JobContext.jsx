@@ -17,6 +17,11 @@ function reducer(state, action) {
         ...state,
         jobselect: action.payload,
       };
+    case "DISABLE":
+      return {
+        ...state,
+        jobselect: null,
+      };
     default:
       return state;
   }
