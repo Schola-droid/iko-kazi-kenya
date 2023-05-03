@@ -3,6 +3,13 @@ import { InitialContext } from "./JobContext";
 
 const JobDetails = () => {
   const { state, dispatch } = useContext(InitialContext);
+
+  function handleDisablerClick() {
+    console.log("disable");
+    dispatch({
+        type: 'DISABLE',
+    })
+  }
   const job = state.jobselect;
   console.log(job);
   return (
@@ -10,7 +17,10 @@ const JobDetails = () => {
       {/* JOB DETAILS */}
       {job && (
         <div className="job-details">
-            <img src={job.image} alt="image" className="jobselect-image"/>
+          <p className="disabler" onClick={handleDisablerClick}>
+            x
+          </p>
+          <img src={job.image} alt="image" className="jobselect-image" />
           <h3>{job.job_title}</h3>
           <p>{job.date_posted}</p>
           <p>{job.job_location}</p>

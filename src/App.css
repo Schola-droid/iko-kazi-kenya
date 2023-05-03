@@ -118,7 +118,23 @@ body {
 .job-details {
   border-radius: 5px;
   background-color: rgb(46, 46, 97);
-  padding: 10px;
+  /* padding: 10px; */
+  position: relative;
+}
+.job-details .disabler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+  width: 3vh;
+  height: 3vh;
+  background-color: rgb(16, 16, 16);
+  padding: 5px;
+  border-radius: 50%;
+  color: rgb(212, 212, 212);
+  cursor: pointer;
 }
 .job-details .jobselect-image {
   width: 100%;
