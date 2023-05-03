@@ -10,6 +10,7 @@ const JobDetails = () => {
       {/* JOB DETAILS */}
       {job && (
         <div className="job-details">
+            <img src={job.image} alt="image" className="jobselect-image"/>
           <h3>{job.job_title}</h3>
           <p>{job.date_posted}</p>
           <p>{job.job_location}</p>
