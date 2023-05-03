@@ -71,6 +71,10 @@ body {
   margin-left: 5px;
   border-radius: 10px;
 }
+.jobs .job-image {
+  width: 50%;
+  border-radius: 5px;
+}
 .jobs h3 {
   margin-bottom: 10px;
   color: rgb(255, 255, 181);
@@ -81,7 +85,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .jobs .sub-details {
@@ -116,4 +120,13 @@ body {
   border-radius: 5px;
   background-color: rgb(46, 46, 97);
   padding: 10px;
+}
+
+#footer {
+  background-color: rgb(46, 46, 97);
+  padding: 10px;
+  text-align: center;
+  color: rgb(181, 181, 203);
+  font-size: 1vh;
+  letter-spacing: 0.1vh;
 }

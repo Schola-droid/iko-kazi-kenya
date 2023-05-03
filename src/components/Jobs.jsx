@@ -4,10 +4,11 @@ import CategoryFilter from "./CategoryFilter";
 import JobDetails from "./JobDetails";
 import { InitialContext } from "./JobContext";
 import JobsRender from "./JobsRender";
+import Footer from "./Footer";
 
 const Jobs = () => {
   const { state, dispatch } = useContext(InitialContext);
-//   console.log(state.jobselect);
+  //   console.log(state.jobselect);
   const id = state.jobselect ? "mainComponents" : "mainComponentsB";
   return (
     <div>
@@ -17,6 +18,7 @@ const Jobs = () => {
         <JobsRender />
         <JobDetails />
       </div>
+      <Footer />
     </div>
   );
 };

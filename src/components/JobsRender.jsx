@@ -17,6 +17,7 @@ const JobsRender = () => {
           {data?.map((job) => {
             return (
               <li key={job.job_id} className="jobs">
+                <img src={job.image} alt="image" className="job-image"/>
                 <h3>{job.job_title}</h3>
                 <p className="truncate">{job.job_description}</p>
                 <div className="sub-details">
