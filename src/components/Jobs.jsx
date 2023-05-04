@@ -21,7 +21,7 @@ const Jobs = () => {
   }
 
   return (
-    <div>
+    <div id="mainwraper">
       <SearchBar />
       <div id={id}>
         <CategoryFilter />

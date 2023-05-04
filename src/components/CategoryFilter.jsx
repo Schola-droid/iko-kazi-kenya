@@ -4,8 +4,7 @@ const CategoryFilter = () => {
   return (
     <>
       <div>
-        CATEGORY FILTER
-        <div id="category-filter"></div>
+        <div id="category-filter">CATEGORY FILTER</div>
       </div>
     </>
   );

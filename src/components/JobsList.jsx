@@ -6,12 +6,13 @@ const JobsRender = () => {
 
   const data = state.jobs;
   function jobselect(job) {
-    // console.log(job);
     dispatch({ type: "JOB-SELECT", payload: job });
   }
   return (
     <>
       <div>
+        <h3>JOBS AVAILABLE</h3>
+        
         <ul id="jobslist-container">
           {data?.map((job) => {
             return (
