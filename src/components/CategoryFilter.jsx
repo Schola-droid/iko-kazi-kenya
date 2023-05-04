@@ -22,7 +22,7 @@ const CategoryFilter = ({ filters, handleFilterChange }) => {
   }
   return (
     <>
-      <div>
+      <div id="category-filter">
         <h2>CATEGORY FILTER</h2>
         <div>
           <h3>Jobs</h3>

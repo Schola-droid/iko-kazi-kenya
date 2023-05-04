@@ -25,6 +25,9 @@ const SearchBar = () => {
         placeholder="Search for jobs"
         onChange={handleSearch}
       />
+    {/*   <div id="search-icon">
+        <i className="fa-solid fa-magnifying-glass"></i>
+      </div> */}
     </div>
   );
 };
