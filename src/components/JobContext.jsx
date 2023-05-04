@@ -41,9 +41,24 @@ function reducer(state, action) {
 }
 
 function filterJobs(jobs, filters) {
-  console.log(jobs)
   return jobs?.filter((job) => {
+    if (
+      filters.location &&
+      !job.job_location.toLowerCase().includes(filters.location.toLowerCase())
+    ) {
+      return false;
+    }
     if (filters.jobType && job.job_type !== filters.jobType) {
+      return false;
+    }
+    /* if (filters.salary && !job.job_salary < filters.salary) {
+      return false;
+    } */
+
+    if (
+      filters.search &&
+      !job.job_title.toLowerCase().includes(filters.search.toLowerCase())
+    ) {
       return false;
     }
     return true;

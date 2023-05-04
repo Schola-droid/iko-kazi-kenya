@@ -16,7 +16,10 @@ const CategoryFilter = ({ filters, handleFilterChange }) => {
   }
   const salo = allFilters.salary > 0 ? allFilters.salary : null;
 
-  function handleSalaryChange(e, newValue) {}
+  function handleSalaryChange(e, newValue) {
+    // console.log(e.target.max);
+    console.log(newValue);
+  }
   return (
     <>
       <div>
@@ -44,7 +47,8 @@ const CategoryFilter = ({ filters, handleFilterChange }) => {
               max="1000000"
               value={allFilters.salary}
               onChange={handleFilterChange}
-            /><br />
+            />
+            <br />
             <output htmlFor="salaryRange">${salo}</output>
           </div>
           <div>
