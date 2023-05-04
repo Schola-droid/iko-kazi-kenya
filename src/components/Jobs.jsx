@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 const Jobs = () => {
   const { state, dispatch } = useContext(InitialContext);
-  //   console.log(state.jobselect);
+    
   let id;
   let jobsview;
   if (state.jobselect) {
