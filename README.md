@@ -13,6 +13,7 @@ If you want to contribute to this project you can clone it and rename it then wo
 # Known issues
 
 The site does't really filter the jobs using the salary filter.
+
 # Buy me a coffee
 
 If you like the project, feel free to buy me coffee. mPesa Number 0705790997
