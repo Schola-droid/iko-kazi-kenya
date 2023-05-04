@@ -36,7 +36,6 @@ body {
   padding: 10px 15px;
   align-items: center;
   border-radius: 5px;
-  
 }
 #nav-links a {
   margin: 0 10px;
@@ -193,7 +192,7 @@ body {
 }
 #location,
 #jobType {
-  color: var(--back-color);;
+  color: var(--back-color);
 }
 
 /* JOB DETAILS STYLING */
@@ -303,4 +302,35 @@ p:nth-child(2) {
   color: var(--text-color);
   font-size: 1vh;
   letter-spacing: 0.1vh;
+}
+/* CONTACTS STYLING */
+
+#contacts {
+  margin-top: 50px;
+}
+#contacts main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+#contacts main form {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+}
+#contacts main form label {
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+#contacts main form label input, textarea{
+  width: 90vw;
+}
+#contacts main form button{
+  background-color: #006dff;
+  border: none;
+  color: white;
+  width: 20vw;
+  margin-left: 2vw;
+  padding: 10px;
+  border-radius: 10px;
 }
